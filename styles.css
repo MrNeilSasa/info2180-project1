@@ -1,11 +1,251 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
+    display: grid;
+    grid-template-columns: 20%, 80%;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    grid-column: span 2;
 }
+
+header{
+    background-color: white;
+    font-size: 18px;
+    grid-column: span 2;
+    
+        
+}
+
+header h1{
+    float: left;
+    font-size: 18px;
+}
+
+header ul{
+    list-style-type: none ;
+    padding-left: 400px;
+    
+    
+}
+
+header ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    
+}
+
+header ul li a{
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+header ul li a:hover{
+    color: #5A67D8;
+}
+
+.overview-hero{
+    background-color: #E2E8F0;
+}
+
+.overview-hero .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    
+
+    
+    grid-column: span 2;
+}
+
+.overview-hero-image{
+   float: left;
+   padding-right: 50px;
+   padding-top: 50px;
+   padding-bottom: 45px;
+   
+    
+}
+
+.overview-hero-image img{
+    height: 200px;
+    width: 300px;
+}
+
+.overview-hero-text{
+    float: right ;
+    padding-top: 50px;
+    
+}
+
+main{
+    grid-column: span 2;
+}
+
+footer{
+    grid-column: span 2;
+    background-color: #4A5568;
+    color: white;
+    padding: 20px;
+}
+
+article img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    
+}
+
+.testing{
+    background-color: #4A5568;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    gap: 50px;
+    
+}
+
+.testing-desciption{
+    grid-column: 1;
+    width: 550px;
+    align-self: center;
+    
+}
+
+.learn-about{
+    padding: 40px;
+}
+
+.learn-about img{
+    height: 200px;
+    max-width: 100%;
+}
+.card-body{
+    margin-left: 2px;
+    padding-left: 5px;
+}
+
+.cta{
+    background-color: #48BB78;
+    border-radius: 5px;
+    height:30px;
+    width: 150px;
+    align-self: center;
+    padding: 8px;
+    padding-top: 10px;
+    grid-column: 2;
+    text-align: center;
+    
+}
+.cta a{
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+}
+
+.newsletter{
+    background-color: #48BB78;
+    padding: 40px;
+    color: white;
+    
+
+}
+
+.newsletter .container{
+    width: 500px;
+}
+
+.stories h2{
+    color: #5A67D8;
+}
+
+.stories article{
+    display: grid;
+    grid-template-columns: 20%, 80%;
+    gap: 30px;
+}
+
+.article-body{
+    grid-column: 2;
+}
+
+.stories{
+    padding: 50px;
+}
+
+.stories article img{
+    margin: 10px;
+    grid-column: 1;
+}
+
+.article-body a{
+    color: #5A67D8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button{
+    background-color: #5A67D8;
+    color: white;
+    margin-left: 5px;
+    border-radius: 5px;
+    height:50px;
+    width: 175px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
+}
+
+form{
+    display: flex;
+    justify-content: left;
+}
+
+input{
+    border-radius: 5px;
+    height: 45px;
+    width: 320px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "NotoSans", sans-serif;
+}
+
+.learn-about h2{
+    color: #48BB78;
+}
+
+.learn-about h3{
+    color: #48BB78;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    border-color: #E2E8F0;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+
